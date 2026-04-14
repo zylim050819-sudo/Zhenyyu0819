@@ -1,7 +1,7 @@
 pandas
 numpy
-matplotlib.pyplot
+matplotlib
 seaborn
-warnings
+scikit-learn
+xgboost
 joblib
-json
