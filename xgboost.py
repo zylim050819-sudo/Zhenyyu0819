@@ -10,10 +10,7 @@ Original file is located at
 # =========================
 # STEP 1: Import Libraries
 # =========================
-import pandas as pd
-import numpy as np # <-- FIXED BUG HERE
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 from sklearn.model_selection import train_test_split, GridSearchCV, learning_curve
 from sklearn.preprocessing import StandardScaler, label_binarize
@@ -30,7 +27,7 @@ from sklearn.metrics import (
 # NOTE: You may need to run `pip install xgboost` in your terminal
 from xgboost import XGBClassifier
 
-import warnings
+
 warnings.filterwarnings("ignore")
 
 RANDOM_STATE = 42
@@ -227,8 +224,7 @@ plt.savefig("xgboost_learning_curve.png")
 plt.show()
 
 # --- ADD THIS TO THE VERY BOTTOM ---
-import joblib
-import json
+
 
 print("\nExporting model and metadata for Streamlit...")
 
